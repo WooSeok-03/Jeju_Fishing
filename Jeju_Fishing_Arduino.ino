@@ -39,12 +39,13 @@ void loop() {
   int h = dht.readHumidity(); //h 변수에 습도 선언
   int t = dht.readTemperature();  //t 변수에 온도 선언
 
+  //블루투스 - 센서 데이터 전송
   bluetooth.print("{\"temp\":");
   bluetooth.print(t); //온도
   bluetooth.print(",\"hei\":");
   bluetooth.print(h); //습도
   bluetooth.print(",\"isRain\":");
-  bluetooth.print(nRaining); //비오는지
+  bluetooth.print(nRaining); //비 오는지 확인
   bluetooth.println("}");
 
   //시리얼 모니터 출력
