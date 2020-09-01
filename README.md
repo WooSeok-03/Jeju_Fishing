@@ -8,5 +8,5 @@ Jeju_Fishing_Arduino
 - Android
 
 [🎬개발 환경]
-- Visual Studio
+- Arduino IDE
 - Android Studio
